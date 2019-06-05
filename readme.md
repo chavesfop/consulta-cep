@@ -10,6 +10,18 @@ $ cp consulta-cep/.env.example consulta-cep/.env
 $ vim consulta-cep/.env #neste momento ajuste as configurações de BD e insera um APP_KEY aleatório.
 $ cd consulta-cep && php artisan migrate
 ```
+## Execução e testes
+```
+$ cd consulta-cep #entre na pasta raiz do projeto
+$ php -S localhost:8000 -t public/
+```
+Os testes podem ser realizador pelo Postman ou afins.
+
+### Endpoint
+`POST` - `http://localhost:8000/consulta`  
+Params: cep (ex `88137010` ou `88137-010`).
+
+
 
 ## Todo
 Consulta por `logradouro`, `localidade`, `uf` combinados.
