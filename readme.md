@@ -11,6 +11,9 @@ $ vim consulta-cep/.env #neste momento ajuste as configurações de BD e insera 
 $ cd consulta-cep && php artisan migrate
 ```
 
+## Todo
+Consulta por `logradouro`, `localidade`, `uf` combinados.
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
