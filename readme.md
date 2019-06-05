@@ -5,10 +5,11 @@ Funciona da seguinte maneira: consulta o CEP na tabela `cep_cache`, caso não en
 ## Instalação
 ```
 $ git clone https://github.com/chavesfop/consulta-cep
+$ cd consulta-cep
 $ composer install
-$ cp consulta-cep/.env.example consulta-cep/.env
-$ vim consulta-cep/.env #neste momento ajuste as configurações de BD e insera um APP_KEY aleatório.
-$ cd consulta-cep && php artisan migrate
+$ cp .env.example .env
+$ vim .env #neste momento ajuste as configurações de BD e insera um APP_KEY aleatório.
+$ php artisan migrate
 ```
 ## Execução e testes
 ```
