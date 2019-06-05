@@ -4,7 +4,12 @@ Funciona da seguinte maneira: consulta o CEP na tabela `cep_cache`, caso não en
 
 ## Instalação
 ```
-git clone https://github.com/chavesfop/
+$ git clone https://github.com/chavesfop/consulta-cep
+$ composer install
+$ cp consulta-cep/.env.example consulta-cep/.env
+$ vim consulta-cep/.env #neste momento ajuste as configurações de BD e insera um APP_KEY aleatório.
+$ cd consulta-cep && php artisan migrate
+```
 
 # Lumen PHP Framework
 
